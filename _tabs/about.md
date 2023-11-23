@@ -30,8 +30,10 @@ In summary, my life is a blend of intellectual pursuit and adventurous spirit. F
 **2016 - 2017** : Worked as a Lighting Application Engineer in [Philips, Delhi](https://www.signify.com/en-in/contact).
 
 
-## Education
+## Hobbies
 
-**2017 - 2019** : Completed my M.Tech in Applied Statistics from [Indian Statistical Institute, Kolkata](http://www.isical.ac.in/).
+I have a keen interest on stock market trading, with a focus on futures and options.
 
-**2012 - 2016** : Completed my B.Tech in Electrical Engineering from [Jadavpur University, Kolkata](http://jaduniv.edu.in/).
+I am pursuing Financial Independence, Retire Early (FIRE) with a target age of 50.
+
+I love to travel the world. Covered 8 countries as of now.
