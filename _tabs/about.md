@@ -18,3 +18,13 @@ Outside of my professional life, I am an avid adventurer at heart. My love for t
 The majestic Himalayas hold a special place in my heart. I have embarked on 7-8 treks in this magnificent mountain range, each trek offering a unique blend of physical challenge and spiritual rejuvenation. These treks are not just physical endeavors but journeys that have shaped my perspective on life and nature.
 
 In summary, my life is a blend of intellectual pursuit and adventurous spirit. From the quiet suburbs of Hridaypur to the soaring heights of the Himalayas and the exciting realm of Data Science, my journey is one of continuous learning and exploration.
+
+## Occupation
+
+**2022 - present** : Working as a Senior Data Scientist in [Intuit India Pvt Ltd, Bangalore](https://www.intuit.com/in/).
+
+**2019 - 2021** : Worked as a Data Scientist in [Samsung Research Institute, Bangalore (SRI-B)](https://research.samsung.com/sri-b).
+
+**2019 - 2019** : Data Science intern in [Johnson and Johnson, Mumbai](https://www.jnj.in/) , Supply Chain Analytics Team.
+
+**2016 - 2017** : Worked as a Lighting Application Engineer in [Philips, Delhi](https://www.signify.com/en-in/contact).
