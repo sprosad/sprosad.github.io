@@ -25,7 +25,7 @@ In summary, my life is a blend of intellectual pursuit and adventurous spirit. F
 
 **2019 - 2021** : Worked as a Data Scientist in [Samsung Research Institute, Bangalore (SRI-B)](https://research.samsung.com/sri-b).
 
-**2019 - 2019** : Data Science intern in [Johnson and Johnson, Mumbai], Supply Chain Analytics Team(https://www.jnj.in/).
+**2019 - 2019** : Data Science intern in [Johnson and Johnson, Mumbai](https://www.jnj.in/) , Supply Chain Analytics Team
 
 **2016 - 2017** : Worked as a Lighting Application Engineer in [Philips, Delhi](https://www.signify.com/en-in/contact).
 
