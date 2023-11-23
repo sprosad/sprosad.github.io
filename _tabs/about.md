@@ -5,11 +5,11 @@ order: 4
 ---
 
 Hi, 
-I am Sourav. 
+I am Sourav Prosad. 
 
 ![myself](/assets/img/skydive.jpeg)
 
-Born and raised in the suburban town of Hridaypur in North 24 Parganas, I have always been fascinated by the world of numbers and patterns. My passion for mathematics was evident from an early age, culminating in a significant achievement when I qualified for the Regional Mathematical Olympiad in 2010. This early success was a stepping stone that led me to delve deeper into the realm of statistics, a field that captivated me with its intricate balance of data and theory.
+Born and raised in the suburban town of Hridaypur in North 24 Parganas, West Bengal, India, I have always been fascinated by the world of numbers and patterns. My passion for mathematics was evident from an early age, culminating in a significant achievement when I qualified for the Regional Mathematical Olympiad in 2010. This early success was a stepping stone that led me to delve deeper into the realm of statistics, a field that captivated me with its intricate balance of data and theory.
 
 Driven by my interest in statistics, I pursued an academic path that further honed my skills in this area. My journey in academia seamlessly transitioned into a professional career as a Data Science expert. In the dynamic and ever-evolving field of Data Science, I specialize in classical Machine Learning and Natural Language Processing (NLP). These specialties not only allow me to work on cutting-edge technologies but also to contribute to the advancement of these fields.
 
@@ -22,9 +22,12 @@ In summary, my life is a blend of intellectual pursuit and adventurous spirit. F
 ## Occupation
 
 **2022 - present** : Working as a Senior Data Scientist in [Intuit India Pvt Ltd, Bangalore](https://www.intuit.com/in/).
+
 **2019 - 2021** : Worked as a Data Scientist in [Samsung Research Institute, Bangalore (SRI-B)](https://research.samsung.com/sri-b).
-**2019 - 2019** : Data Science intern in [Johnson and Johnson, Mumbai], Supply Chain Analytics Team(https://www.jnj.in/)
-**2016 - 2017** : Worked as a Lighting Application Engineer in [Philips, Delhi](https://www.signify.com/en-in/contact)
+
+**2019 - 2019** : Data Science intern in [Johnson and Johnson, Mumbai], Supply Chain Analytics Team(https://www.jnj.in/).
+
+**2016 - 2017** : Worked as a Lighting Application Engineer in [Philips, Delhi](https://www.signify.com/en-in/contact).
 
 ## Education
 
@@ -35,6 +38,8 @@ In summary, my life is a blend of intellectual pursuit and adventurous spirit. F
 
 ## Hobbies
 
-I have a keen interest on stock market trading, with a focus on futures and options
-I am pursuing Financial Independence, Retire Early (FIRE) with a target age of 50
+I have a keen interest on stock market trading, with a focus on futures and options.
+
+I am pursuing Financial Independence, Retire Early (FIRE) with a target age of 50.
+
 I love to travel the world. Covered 8 countries as of now.
