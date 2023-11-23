@@ -28,3 +28,9 @@ In summary, my life is a blend of intellectual pursuit and adventurous spirit. F
 **2019 - 2019** : Data Science intern in [Johnson and Johnson, Mumbai](https://www.jnj.in/) , Supply Chain Analytics Team.
 
 **2016 - 2017** : Worked as a Lighting Application Engineer in [Philips, Delhi](https://www.signify.com/en-in/contact).
+
+## Education
+
+**2019** : Completed my M.Tech in Applied Statistics from [Indian Statistical Institute, Kolkata](http://www.isical.ac.in/).
+
+**2016** : Completed my B.Tech in Electrical Engineering from [Jadavpur University, Kolkata](http://jaduniv.edu.in/).
