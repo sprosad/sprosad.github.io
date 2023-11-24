@@ -98,7 +98,7 @@ This therefore gives us the stochastic gradient ascent rule
 
 ![lr_likelihood_4](/assets/img/lr_likelihood_4.jpeg)
 
-## Why we can not use Least Square in Logistic regression ?
+## Why not Least Square for optimization ?
 
 **Binary Outcomes and Non-linear Relationships**: Logistic regression is used for binary outcomes (e.g., 0 or 1, success or failure). The relationship between the independent variables and the probability of the outcome is not linear but sigmoidal. The least squares method, on the other hand, assumes a linear relationship and is designed to minimize the distance between observed values and the values predicted by a linear equation. This linear approach doesn't fit well with the non-linear, S-shaped curve of the logistic function.
 
@@ -114,7 +114,7 @@ This therefore gives us the stochastic gradient ascent rule
 
 In essence, the least squares method is not suitable for logistic regression due to its underlying assumptions of linearity, constant error variance, and sensitivity to outliers, which do not align with the characteristics of logistic regression models.
 
-## What will happen if we use MSE as cost function in logistic regression ?
+## Why not MSE as cost function ?
 
 Using Mean Squared Error (MSE) as the cost function in logistic regression is not advisable due to several reasons related to the nature of logistic regression and the implications of using MSE in this context:
 
