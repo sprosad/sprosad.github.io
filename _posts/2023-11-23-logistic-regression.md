@@ -54,6 +54,29 @@ Fitting a logistic regression model geometrically can be understood through the 
 
 In summary, geometrically, logistic regression fits a model by finding a linear decision boundary in the feature space. This boundary corresponds to a transition in probabilities, as modeled by the sigmoid function, from one class to another. The fitting process involves adjusting this boundary to best separate the classes based on the likelihood of observing the given data.
 
+## Some Mathematics
+
+Lets assume, $$ h_\theta (x) $$ is the probability of prediction class 1.
+$$ y_i $$ follows Bernoulli's distribution.
+$$ y_i = 1 $$ with probability $$ h_\theta (x) $$ i.e $$ P(y=1|x;\theta) = $$ h_\theta (x) $$
+$$ y_i = 0 $$ with probability $$ (1 - h_\theta (x)) $$ i.e $$ P(y=0|x;\theta) = $$ 1 - h_\theta (x) $$
+
+Note that this can be written more compactly as
+
+$$
+P(y|x;\theta) = (h_\theta (x))^y * (1 - h_\theta (x))^{1-y}
+$$
+
+Assuming that the n training examples were generated independently, we can then write down the likelihood of the parameters as
+
+![lr_likelihood_1](/assets/img/lr_likelihood_1.jpeg)
+
+
+
+
+
+
+
 
 
 
