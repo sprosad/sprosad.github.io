@@ -87,7 +87,7 @@ Let’s start by working with just one training example (x, y), and take derivat
 
 ![lr_likelihood_3](/assets/img/lr_likelihood_3.jpeg)
 
-Above, we used the fact that $$ g\prime(z) = g(z)(1-g(z)).
+Above, we used the fact that $$ g\prime(z) = g(z)(1-g(z)) $$
 This therefore gives us the stochastic gradient ascent rule
 
 ![lr_likelihood_4](/assets/img/lr_likelihood_4.jpeg)
