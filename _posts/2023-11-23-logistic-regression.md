@@ -56,8 +56,14 @@ In summary, geometrically, logistic regression fits a model by finding a linear 
 
 ## Some Mathematics
 
+**Derivative of sigmoid function**
+
+![sigmoid_derivative](/assets/img/sigmoid_derivative.jpeg)
+
 Lets assume, $$ h_\theta (x) $$ is the probability of prediction class 1.
 $$ y_i $$ follows Bernoulli's distribution.
+
+Where $$ h_\theta (x) = 1/(1 + e^{-\theta^T x})$$
 
 $$ y_i = 1 $$ with probability $$ h_\theta (x) $$ 
 
