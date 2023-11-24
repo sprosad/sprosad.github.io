@@ -59,9 +59,13 @@ In summary, geometrically, logistic regression fits a model by finding a linear 
 Lets assume, $$ h_\theta (x) $$ is the probability of prediction class 1.
 $$ y_i $$ follows Bernoulli's distribution.
 
-$$ y_i = 1 $$ with probability $$ h_\theta (x) $$ i.e $$ P(y=1|x;\theta) =  h_\theta (x) $$
+$$ y_i = 1 $$ with probability $$ h_\theta (x) $$ 
 
-$$ y_i = 0 $$ with probability $$ (1 - h_\theta (x)) $$ i.e $$ P(y=0|x;\theta) =  1 - h_\theta (x) $$
+ i.e $$ P(y=1|x;\theta)=h_\theta (x) $$
+
+$$ y_i = 0 $$ with probability $$ (1 - h_\theta (x)) $$ 
+
+i.e $$ P(y=0|x;\theta) =  1 - h_\theta (x) $$
 
 Note that this can be written more compactly as
 
