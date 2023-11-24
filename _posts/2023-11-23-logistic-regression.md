@@ -40,17 +40,17 @@ Fitting a logistic regression model geometrically can be understood through the 
 
 2. **Geometric Representation**:
 
-Linear Boundary in Feature Space: In the feature space, logistic regression determines a linear decision boundary. This boundary is the set of points where the model is uncertain (predicts a 50% chance for either class). On one side of this boundary, the model predicts the probability greater than 50% for one class, and on the other side, it predicts more than 50% for the other class.
-Transforming Through Sigmoid: The linear combination of variables and coefficients (the z value) is fed into the sigmoid function. This function compresses the output to a range between 0 and 1, representing the probability.
-Sigmoid Curve in Probability Space: If you plot the sigmoid function, it looks like an "S" shape. The bottom part of the "S" approaches zero, and the top part approaches one. The middle part, where the curve is steepest, represents the area around the decision boundary.
+	- **Linear Boundary in Feature Space**: In the feature space, logistic regression determines a linear decision boundary. This boundary is the set of points where the model is uncertain (predicts a 50% chance for either class). On one side of this boundary, the model predicts the probability greater than 50% for one class, and on the other side, it predicts more than 50% for the other class.
+	Transforming Through Sigmoid: The linear combination of variables and coefficients (the z value) is fed into the sigmoid function. This function compresses the output to a range between 0 and 1, representing the probability.
+	Sigmoid Curve in Probability Space: If you plot the sigmoid function, it looks like an "S" shape. The bottom part of the "S" approaches zero, and the top part approaches one. The middle part, where the curve is steepest, represents the area around the decision boundary.
 
 3. **Fitting the Model**:
-Maximum Likelihood Estimation (MLE): Geometrically, fitting a logistic regression model involves finding the line (in the case of two variables, a plane in higher dimensions) that best separates the classes in the feature space. This is done using MLE, which adjusts the coefficients $$ \beta_i ** to maximize the probability of observing the sample data.
-Probability Contours: In a multidimensional feature space, this boundary can be visualized as a contour where each point on the contour represents a particular probability (like 0.5). Points inside one region of the contour have probabilities leaning towards one class and points on the other side lean towards the other class.
+	- **Maximum Likelihood Estimation (MLE)**: Geometrically, fitting a logistic regression model involves finding the line (in the case of two variables, a plane in higher dimensions) that best separates the classes in the feature space. This is done using MLE, which adjusts the coefficients $$ \beta_i ** to maximize the probability of observing the sample data.
+	- **Probability Contours**: In a multidimensional feature space, this boundary can be visualized as a contour where each point on the contour represents a particular probability (like 0.5). Points inside one region of the contour have probabilities leaning towards one class and points on the other side lean towards the other class.
 
 4. **Interpreting the Fit**:
-The distance of a point from the decision boundary in the feature space can be interpreted as the confidence of the prediction. The further away from the boundary, the higher the confidence.
-The slope of the decision boundary determines how quickly probabilities change as you move in the feature space.
+	- The distance of a point from the decision boundary in the feature space can be interpreted as the confidence of the prediction. The further away from the boundary, the higher the confidence.
+	- The slope of the decision boundary determines how quickly probabilities change as you move in the feature space.
 
 In summary, geometrically, logistic regression fits a model by finding a linear decision boundary in the feature space. This boundary corresponds to a transition in probabilities, as modeled by the sigmoid function, from one class to another. The fitting process involves adjusting this boundary to best separate the classes based on the likelihood of observing the given data.
 
