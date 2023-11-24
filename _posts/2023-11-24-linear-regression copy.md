@@ -33,14 +33,20 @@ Examples of Linear Models:
 
 $$
 Y = \beta_0 + \beta_1 * x_1
+$$
+
+$$
 Y = \beta_0 + \beta_1 * x_1 ^2
 $$
 
 Examples of Non-Linear Models:
 
 $$
-Y = \beta_0 + x_1 ^ \beta_1
-Y = \beta_0 * cos(\beta_1 * x_1)
+Y = \beta_0 + (x_1) ^ (\beta_1)
+$$
+
+$$
+Y = \beta_0 * cos((\beta_1) * (x_1))
 $$
 
 
