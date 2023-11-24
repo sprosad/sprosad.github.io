@@ -77,6 +77,21 @@ Assuming that the n training examples were generated independently, we can then 
 
 ![lr_likelihood_1](/assets/img/lr_likelihood_1.jpeg)
 
+It will be easier to maximize the log-likelihood:
+
+![lr_likelihood_2](/assets/img/lr_likelihood_2.jpeg)
+
+
+How do we maximize the likelihood? Similar to our derivation in the case of linear regression, we can use gradient ascent.
+Let’s start by working with just one training example (x, y), and take derivatives to derive the stochastic gradient ascent rule
+
+![lr_likelihood_3](/assets/img/lr_likelihood_3.jpeg)
+
+Above, we used the fact that $$ g\prime(z) = g(z)(1-g(z)).
+This therefore gives us the stochastic gradient ascent rule
+
+![lr_likelihood_4](/assets/img/lr_likelihood_4.jpeg)
+
 
 
 
