@@ -61,11 +61,11 @@ $$ y_i $$ follows Bernoulli's distribution.
 
 $$ y_i = 1 $$ with probability $$ h_\theta (x) $$ 
 
- i.e $$ P(y=1|x;\theta)=h_\theta (x) $$
+$$ P(y=1|x;\theta)=h_\theta (x) $$ and 
 
 $$ y_i = 0 $$ with probability $$ (1 - h_\theta (x)) $$ 
 
-i.e $$ P(y=0|x;\theta) =  1 - h_\theta (x) $$
+$$ P(y=0|x;\theta) =  1 - h_\theta (x) $$
 
 Note that this can be written more compactly as
 
