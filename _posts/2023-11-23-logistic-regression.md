@@ -61,7 +61,7 @@ $$ y_i $$ follows Bernoulli's distribution.
 
 $$ y_i = 1 $$ with probability $$ h_\theta (x) $$ 
 
-$$ P(y=1|x;\theta)=h_\theta (x) $$ and 
+$$ P(y=1|x;\theta)=h_\theta (x) $$ 
 
 $$ y_i = 0 $$ with probability $$ (1 - h_\theta (x)) $$ 
 
