@@ -87,7 +87,7 @@ $$
  \begin{aligned}
 P(y \mid \beta) & = \prod_{i=1}^{n} \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(y_i - \beta^Tx_i)^2}{2\sigma^2}} \\
 log(P(y \mid \beta)) & = \sum_{i=1}^{n}[log\frac{1}{\sigma\sqrt{2\pi}} - \frac{1}{2\sigma^2}(y_i-\beta^Tx_i)^2]\\
-log(P(y \mid \beta)) \dbtilde \sum_{j=1}^{n}[ - \frac{1}{2\sigma^2}(y_i-\beta^Tx_i)^2] \text{The first part doesn't contains beta, so we can ignore}  ...(ii)
+log(P(y \mid \beta)) & \sim \sum_{j=1}^{n}[ - \frac{1}{2\sigma^2}(y_i-\beta^Tx_i)^2] \text{The first part doesn't contains beta, so we can ignore}  ...(ii)
  \end{aligned}
 \end{equation}
 $$
@@ -103,7 +103,7 @@ $$
  \begin{aligned}
 P(\beta) & = \prod_{j=1}^{p} \frac{1}{\tau\sqrt{2\pi}} e^{-\frac{\beta_j^2}{2\tau^2}} \\
 log(P(\beta)) & = \sum_{j=1}^{p}[log\frac{1}{\tau\sqrt{2\pi}} - \frac{\beta_j^2}{2\tau^2}] \\
-log(P(\beta)) \dbtilde \sum_{j=1}^{p}[ - \frac{\beta_j^2}{2\tau^2}] \text{The first part doesn't contains beta, so we can ignore} ...(iii)
+log(P(\beta)) & \sim \sum_{j=1}^{p}[ - \frac{\beta_j^2}{2\tau^2}] \text{The first part doesn't contains beta, so we can ignore} ...(iii)
  \end{aligned}
 \end{equation}
 $$
