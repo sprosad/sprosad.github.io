@@ -63,8 +63,10 @@ $$
 which means, that this setting of $$\beta$$ is most likely given the data we actually observe. $$\beta_{MAP}$$ maximizes the posterior. Now let's solve it.
 
 $$
+\begin{multline}
 \beta_{MAP} = argmax_\beta P(\beta|y) \\
 			= argmax_\beta \frac{P(y|\beta)P(\beta)}{P(y)}
+\end{multline}
 $$
 
 $$
