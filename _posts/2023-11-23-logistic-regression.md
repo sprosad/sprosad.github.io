@@ -1,6 +1,6 @@
 ---
 title: Logistic Regression
-date: 2023-11-23 17:00:00 +0800
+date: 2023-11-23 17:00:00 +0530
 categories: [Data Science]
 tags: [machine learning]     # TAG names should always be lowercase
 toc : true
