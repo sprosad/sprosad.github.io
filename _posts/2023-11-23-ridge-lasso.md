@@ -19,7 +19,7 @@ $$
 Where y is the regressor variable, X is the data, $$ \beta $$ is the parameter and $$ \epsilon $$ is the error term.
 
 **Assumption:**
-\usepackage{mathtools}
+
 $$
 \epsilon \sim N(0, \sigma^2)
 $$
@@ -33,7 +33,7 @@ One of the issues in $$ \beta $$ estimated from Ordinary Least Square(OLS) is th
 So, we use the method of regularization. That comes in two forms i.e Lasso(L1 norm) and Ridge(L2 norm). So here the optimization problem is slightly different.
 
 $$
-Lasso:   \hat{\beta_{L1}} = argmin_\beta[\norm{y-X\beta^2_2} + \lambda||\beta|]
+Lasso:   \hat{\beta_{L1}} = argmin_\beta[||y-X\beta^2_2|| + \lambda||\beta|]
 $$
 
 
