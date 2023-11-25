@@ -19,7 +19,7 @@ $$
 Where y is the regressor variable, X is the data, $$ \beta $$ is the parameter and $$ \epsilon $$ is the error term.
 
 **Assumption:**
-
+\usepackage{mathtools}
 $$
 \epsilon \sim N(0, \sigma^2)
 $$
