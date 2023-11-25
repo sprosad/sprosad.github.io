@@ -63,11 +63,12 @@ $$
 which means, that this setting of $$\beta$$ is most likely given the data we actually observe. $$\beta_{MAP}$$ maximizes the posterior. Now let's solve it.
 
 $$
-\beta_{MAP} = argmax_\beta P(\beta|y)
+\beta_{MAP} = argmax_\beta P(\beta|y) \\
+			= argmax_\beta \frac{P(y|\beta)P(\beta)}{P(y)}
 $$
 
 $$
-            								= argmax_\beta \frac{P(y|\beta)P(\beta)}{P(y)}  
+            								  
 $$
 
 ... using Baye's theorem
@@ -87,10 +88,14 @@ $$
 log(\beta_{MAP}) = argmax_\beta[log(P(y|\beta)) + log(P(\beta))]  ... (i)
 $$
 
-Now we will calculate the values of both the terms separately and combine them later. The first term is very easy to calculate. We know from OLS assumption stated at the begining that $$y_i \sim N(\beta^Tx_i , \sigma^2)$$ . So, as y is a vector of n observations P(y\mid \beta) will be multiplication of n probability density functions each of which is a normal pdf.
+Now we will calculate the values of both the terms separately and combine them later. The first term is very easy to calculate. We know from OLS assumption stated at the begining that $$y_i \sim N(\beta^Tx_i , \sigma^2)$$ . So, as y is a vector of n observations $$P(y\mid \beta)$$ will be multiplication of n probability density functions each of which is a normal pdf.
 
 $$
 P(y|\beta) = \prod_{i=1}^{n} \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(y_i - \beta^Tx_i)^2}{2\sigma^2}}
+$$
+
+$$
+
 $$
 
 
