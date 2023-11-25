@@ -84,10 +84,10 @@ Now we will calculate the values of both the terms separately and combine them l
 
 $$
 \begin{equation}
-
-P(y \mid \beta) = \prod_{i=1}^{n} \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(y_i - \beta^Tx_i)^2}{2\sigma^2}} \\
-log(P(y \mid \beta)) = \sum_{i=1}^{n}[log\frac{1}{\sigma\sqrt{2\pi}} - \frac{1}{2\sigma^2}(y_i-\beta^Tx_i)^2]
-
+ \begin{aligned}
+P(y \mid \beta) & = \prod_{i=1}^{n} \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(y_i - \beta^Tx_i)^2}{2\sigma^2}} \\
+log(P(y \mid \beta)) & = \sum_{i=1}^{n}[log\frac{1}{\sigma\sqrt{2\pi}} - \frac{1}{2\sigma^2}(y_i-\beta^Tx_i)^2]
+ \end{aligned}
 \end{equation}
 $$
 
