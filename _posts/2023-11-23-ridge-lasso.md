@@ -65,22 +65,12 @@ which means, that this setting of $$\beta$$ is most likely given the data we act
 $$
 \begin{multline}
 \beta_{MAP} = argmax_\beta P(\beta|y) \\
-			= argmax_\beta \frac{P(y|\beta)P(\beta)}{P(y)}
+= argmax_\beta \frac{P(y|\beta)P(\beta)}{P(y)} \\
+... using Baye's theorem \\
+= argmax_\beta P(y|\beta)P(\beta) \\
+... the denominator doesnt have any \beta, so we can ignore that\\
 \end{multline}
 $$
-
-$$
-            								  
-$$
-
-... using Baye's theorem
-
-$$
-           									= argmax_\beta P(y|\beta)P(\beta)       
-$$
-
-... the denominator doesnt have any \beta, so we can ignore that
-
 
 Here $$P(y \mid \beta)$$ is the likelihood and $$P(\beta)$$ is the prior. $$P(\beta)$$ is prior, it means it's asking the question, before observing the data, what is the probability of this setting of $$\beta$$ unconditional on anything.
 
