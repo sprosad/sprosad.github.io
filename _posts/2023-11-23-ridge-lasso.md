@@ -67,7 +67,7 @@ $$
 $$
 
 $$
-            								= argmax_\beta P(y|\beta)P(\beta)/P(y)  
+            								= argmax_\beta \frac{P(y|\beta)P(\beta)}{P(y)}  
 $$
 
 ... using Baye's theorem
@@ -79,7 +79,7 @@ $$
 ... the denominator doesnt have any \beta, so we can ignore that
 
 
-Here $P(y|\beta)$ is the likelihood and $P(\beta)$ is the prior. $$P(\beta)$$ is prior, it means it's asking the question, before observing the data, what is the probability of this setting of $$\beta$$ unconditional on anything.
+Here $$P(y \mid \beta)$$ is the likelihood and $$P(\beta)$$ is the prior. $$P(\beta)$$ is prior, it means it's asking the question, before observing the data, what is the probability of this setting of $$\beta$$ unconditional on anything.
 
 Now, we will take log on both the sides, because maximizing/minimizing something is similar to maximizing/minimizing it's log value.
 
@@ -87,7 +87,7 @@ $$
 log(\beta_{MAP}) = argmax_\beta[log(P(y|\beta)) + log(P(\beta))]  ... (i)
 $$
 
-Now we will calculate the values of both the terms separately and combine them later. The first term is very easy to calculate. We know from OLS assumption stated at the begining that $$y_i \sim N(\beta^Tx_i , \sigma^2)$$ . So, as y is a vector of n observations P(y|\beta) will be multiplication of n probability density functions each of which is a normal pdf.
+Now we will calculate the values of both the terms separately and combine them later. The first term is very easy to calculate. We know from OLS assumption stated at the begining that $$y_i \sim N(\beta^Tx_i , \sigma^2)$$ . So, as y is a vector of n observations P(y\mid \beta) will be multiplication of n probability density functions each of which is a normal pdf.
 
 $$
 P(y|\beta) = \prod_{i=1}^{n} \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(y_i - \beta^Tx_i)^2}{2\sigma^2}}
