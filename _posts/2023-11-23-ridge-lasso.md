@@ -66,8 +66,8 @@ $$
 \begin{equation}
   \begin{aligned}
 \beta_{MAP} & = argmax_\beta P(\beta|y) \\
-            & = argmax_\beta \frac{P(y|\beta)P(\beta)}{P(y)}  \text{...........using bayes theroem}\\
-            & = argmax_\beta P(y|\beta)P(\beta)  \text{...........the denominator doesn't have beta, so we can ignore them}\\
+            & = argmax_\beta \frac{P(y|\beta)P(\beta)}{P(y)}  \text{     using bayes theroem}\\
+            & = argmax_\beta P(y|\beta)P(\beta)  \text{       the denominator doesn't have beta, so we can ignore them}\\
   \end{aligned}
 \end{equation}
 $$
@@ -83,12 +83,14 @@ $$
 Now we will calculate the values of both the terms separately and combine them later. The first term is very easy to calculate. We know from OLS assumption stated at the begining that $$y_i \sim N(\beta^Tx_i , \sigma^2)$$ . So, as y is a vector of n observations $$P(y\mid \beta)$$ will be multiplication of n probability density functions each of which is a normal pdf.
 
 $$
-P(y|\beta) = \prod_{i=1}^{n} \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(y_i - \beta^Tx_i)^2}{2\sigma^2}}
+\begin{equation}
+
+P(y \mid \beta) = \prod_{i=1}^{n} \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(y_i - \beta^Tx_i)^2}{2\sigma^2}} \\
+log(P(y \mid \beta)) = \sum_{i=1}^{n}[log\frac{1}{\sigma\sqrt{2\pi}} - \frac{1}{2\sigma^2}(y_i-\beta^Tx_i)^2]
+
+\end{equation}
 $$
 
-$$
-
-$$
 
 
 
