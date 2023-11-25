@@ -123,7 +123,7 @@ $$
  \begin{aligned}
 argmax_\beta [log(P(y \mid \beta)) + log(P(\beta))] & = argmax_\beta [\sum[ - \frac{1}{2\sigma^2}(y_i-\beta^Tx_i)^2 + \sum[ - \frac{\beta_j^2}{2\tau^2}]]\\
                  									& = - argmax_\beta [\sum[\frac{1}{2\sigma^2}(y_i-\beta^Tx_i)^2 + \sum[\frac{\beta_j^2}{2\tau^2}]]\\
-                 									& = - argmax_beta \frac{\sigma^2}{2}[\sum(y_i-\beta^Tx_i)^2 + \frac{\sigma^2}{\tau^2}\sum\beta_j^2]\\
+                 									& = - argmax_beta \frac{1}{2\sigma^2}[\sum(y_i-\beta^Tx_i)^2 + \frac{\sigma^2}{\tau^2}\sum\beta_j^2]\\
                  									& = argmin[||y-X\beta||^2 + \lambda \sum\beta_j^2]
  \end{aligned}
 \end{equation}
