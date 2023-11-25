@@ -67,7 +67,7 @@ $$
   \begin{aligned}
 \beta_{MAP} & = argmax_\beta P(\beta|y) \\
             & = argmax_\beta \frac{P(y|\beta)P(\beta)}{P(y)}  \text{...........using bayes theroem}\\
-            & = argmax_\beta P(y|\beta)P(\beta)  \text{...........the denominator doesn't have $$\beta$$, so we can ignore them}\\
+            & = argmax_\beta P(y|\beta)P(\beta)  \text{...........the denominator doesn't have beta, so we can ignore them}\\
   \end{aligned}
 \end{equation}
 $$
