@@ -28,7 +28,13 @@ $$
 y_i \sim N(\beta^T x_i, \sigma^2)
 $$
 
-One of the issues in $$ \beta $$ estimated from Ordinary Least Square(OLS) is that , $$\hat{\beta_{ols}}$$ have high variance.
+One of the issues in $$ \beta $$ estimated from Ordinary Least Square(OLS) is that , $$\hat{\beta_{ols}}$$ have high variance. It means. small change in X leads to big change in $$\beta$$ . That is not favourable in machine learning.
+
+So, we use the method of regularization. That comes in two forms i.e Lasso(L1 norm) and Ridge(L2 norm). So here the optimization problem is slightly different.
+
+$$
+
+Lasso:   \hat{\beta_{L1}} = \argmin_\beta
 
 
 
