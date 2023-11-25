@@ -87,7 +87,7 @@ $$
  \begin{aligned}
 P(y \mid \beta) & = \prod_{i=1}^{n} \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(y_i - \beta^Tx_i)^2}{2\sigma^2}} \\
 log(P(y \mid \beta)) & = \sum_{i=1}^{n}[log\frac{1}{\sigma\sqrt{2\pi}} - \frac{1}{2\sigma^2}(y_i-\beta^Tx_i)^2]\\
-log(P(y \mid \beta)) & \sim \sum_{j=1}^{n}[ - \frac{1}{2\sigma^2}(y_i-\beta^Tx_i)^2] \text{The first part doesn't contains beta, so we can ignore}  ...(ii)
+log(P(y \mid \beta)) & \sim \sum_{j=1}^{n}[ - \frac{1}{2\sigma^2}(y_i-\beta^Tx_i)^2]  ...(ii)
  \end{aligned}
 \end{equation}
 $$
@@ -103,7 +103,28 @@ $$
  \begin{aligned}
 P(\beta) & = \prod_{j=1}^{p} \frac{1}{\tau\sqrt{2\pi}} e^{-\frac{\beta_j^2}{2\tau^2}} \\
 log(P(\beta)) & = \sum_{j=1}^{p}[log\frac{1}{\tau\sqrt{2\pi}} - \frac{\beta_j^2}{2\tau^2}] \\
-log(P(\beta)) & \sim \sum_{j=1}^{p}[ - \frac{\beta_j^2}{2\tau^2}] \text{The first part doesn't contains beta, so we can ignore} ...(iii)
+log(P(\beta)) & \sim \sum_{j=1}^{p}[ - \frac{\beta_j^2}{2\tau^2}]  ...(iii)
+ \end{aligned}
+\end{equation}
+$$
+
+The first part doesn't have $$\beta$$ term. So, we care about the second term only.
+
+So, each of the $$\beta_j$$ has the pdf like this.
+
+![lr_likelihood_1](/assets/img/lr_likelihood_1.jpeg)
+
+There is a lot of mass around 0. This is where the regularization come in. We are trying to achieve the vakues of $$\beta$$ close to zero in regularization. So, the prior distribution is trying to do the same thing.
+
+So, again going back to our main equation (i) and putting the values from (ii) and (iii), we get:
+
+$$
+\begin{equation}
+ \begin{aligned}
+argmax_\beta [log(P(y \mid \beta)) + log(P(\beta))] & = argmax_\beta [\sum[ - \frac{1}{2\sigma^2}(y_i-\beta^Tx_i)^2 + \sum[ - \frac{\beta_j^2}{2\tau^2}]]
+                 									& = - argmax_\beta [\sum[\frac{1}{2\sigma^2}(y_i-\beta^Tx_i)^2 + \sum[\frac{\beta_j^2}{2\tau^2}]]
+                 									& = - argmax_beta \frac{\sigma^2}{2}[\sum(y_i-\beta^Tx_i)^2 + \frac{\sigma^2}{\tau^2}sum\beta_j^2]
+                 									& = argmin[||y-X\beta||^2 + \lambda sum\beta_j^2]
  \end{aligned}
 \end{equation}
 $$
