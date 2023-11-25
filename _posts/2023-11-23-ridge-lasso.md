@@ -33,7 +33,7 @@ One of the issues in $$ \beta $$ estimated from Ordinary Least Square(OLS) is th
 So, we use the method of regularization. That comes in two forms i.e Lasso(L1 norm) and Ridge(L2 norm). So here the optimization problem is slightly different.
 
 $$
-Lasso:   \hat{\beta_{L1}} = argmin_\beta[||y-X\beta||^2_2]
+Lasso:   \hat{\beta_{L1}} = argmin_\beta[\norm{y-X\beta^2_2} + \lambda||\beta|]
 $$
 
 
