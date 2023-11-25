@@ -54,7 +54,7 @@ $$
 {P(\beta|y)}
 $$
 
-First lets understand what it means. $$\beta$$ is an unknown parameter that we are trying to solve for. y is some known response variable. so $$P(\beta|y)$$ is asking the question about given the known parameter vector y, what is the probability of getting some settings of $$\beta$$. So the natural thing to do is maximize $$\beta$$.
+First lets understand what it means. $$\beta$$ is an unknown parameter that we are trying to solve for. y is some known response variable. so $P(\beta|y)$ is asking the question about given the known parameter vector y, what is the probability of getting some settings of $$\beta$$. So the natural thing to do is maximize $$\beta$$.
 
 $$
 \beta_{MAP} = argmax_\beta P(\beta|y)
@@ -79,7 +79,7 @@ $$
 ... the denominator doesnt have any \beta, so we can ignore that
 
 
-Here $$P(y|\beta)$$ is the likelihood and $$P(\beta)$$ is the prior. $$P(\beta)$$ is prior, it means it's asking the question, before observing the data, what is the probability of this setting of $$\beta$$ unconditional on anything.
+Here $P(y|\beta)$ is the likelihood and $P(\beta)$ is the prior. $$P(\beta)$$ is prior, it means it's asking the question, before observing the data, what is the probability of this setting of $$\beta$$ unconditional on anything.
 
 Now, we will take log on both the sides, because maximizing/minimizing something is similar to maximizing/minimizing it's log value.
 
