@@ -21,11 +21,11 @@ Where y is the regressor variable, X is the data, $$ \beta $$ is the parameter a
 **Assumption:**
 
 $$
-\epsilon ~ N(0, \sigma^2)
+\epsilon \sim N(0, \sigma^2)
 $$
 
 $$
-y_i ~ N(\beta^T x_i, \sigma^2)
+y_i \sim N(\beta^T x_i, \sigma^2)
 $$
 
 
