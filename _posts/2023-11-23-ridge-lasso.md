@@ -67,12 +67,16 @@ $$
 $$
 
 $$
-            = argmax_\beta P(y|\beta)P(\beta)/P(y)  ... using Baye's theorem
+            = argmax_\beta P(y|\beta)P(\beta)/P(y)  
 $$
 
+... using Baye's theorem
+
 $$
-            = argmax_\beta P(y|\beta)P(\beta)       ... the denominator doesnt have any \beta, so we can ignore that
+            = argmax_\beta P(y|\beta)P(\beta)       
 $$
+
+... the denominator doesnt have any \beta, so we can ignore that
 
 
 Here $$P(y|\beta)$$ is the likelihood and $$P(\beta)$$ is the prior. $$P(\beta)$$ is prior, it means it's asking the question, before observing the data, what is the probability of this setting of $$\beta$$ unconditional on anything.
