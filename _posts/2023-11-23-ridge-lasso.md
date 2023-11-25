@@ -66,7 +66,7 @@ $$
 \begin{equation}
   \begin{aligned}
 \beta_{MAP} & = argmax_\beta P(\beta|y) \\
-            & = argmax_\beta \frac{P(y|\beta)P(\beta)}{P(y)} using bayes theroem\\
+            & = argmax_\beta \frac{P(y|\beta)P(\beta)}{P(y)} \text{...using bayes theroem}\\
             & = argmax_\beta P(y|\beta)P(\beta) \\
   \end{aligned}
 \end{equation}
