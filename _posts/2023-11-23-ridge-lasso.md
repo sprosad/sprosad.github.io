@@ -131,7 +131,7 @@ $$
 
 Here $$\lambda = \frac{\sigma^2}{\tau^2}$$. The above equation is nothing but the Ridge Regularization. Isn't is fascinating.
 
-Similarly, if we pick Laplacian prior $$\beta_j \sim \frac{1}{2b}e^{\frac{-|\beta_j|}{b}}$$, the we get the Lasso Regularization. (You can do the calculation of your own). 
+Similarly, if we pick Laplacian prior $$\beta_j \sim \frac{1}{2b}$$, the we get the Lasso Regularization. (You can do the calculation of your own). 
 
 ![lr_likelihood_1](/assets/img/laplace.jpeg)
 
