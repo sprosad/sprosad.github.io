@@ -42,7 +42,7 @@ $$
 
 In the above two equations, the first term is the error in linear regression and second term is the regularization term. There are two distinct goals for the optimization:
 1. Minimize the error term by fitting this model on some setting of $$\beta$$.
-2. The absolute values of $$\beta$$ to be small. This is coming from the regularization term. Because the $$\bet$$ from OLS have high variance means a large set of values. So keeping the regularization term small to keep the $$\beta$$ small.
+2. The absolute values of $$\beta$$ to be small. This is coming from the regularization term. Because the $$\beta$$ from OLS have high variance means a large set of values. So keeping the regularization term small to keep the $$\beta$$ small.
 
 But where the regularization terms come from ?
 
@@ -59,9 +59,9 @@ $$
 which means, that this setting of \beta is most likely given the data we actually observe. $$\beta_{MAP}$$ maximizes the posterior. Now let's solve it.
 
 $$
-\beta_{MAP} = argmax_\betaP(\beta|y)
-            = argmax_\betaP(y|\beta)P(\beta)/P(y)  ... using Baye's theorem
-            = argmax_\betaP(y|\beta)P(\beta)       ... the denominator doesnt have any \beta, so we can ignore that
+\beta_{MAP} = argmax_\beta P(\beta|y) \\
+            = argmax_\beta P(y|\beta)P(\beta)/P(y)  ... using Baye's theorem \\
+            = argmax_\beta P(y|\beta)P(\beta)       ... the denominator doesnt have any \beta, so we can ignore that \\
 $$
 
 Here $$P(y|\beta)$$ is the likelihood and $$P(\beta)$$ is the prior. $$P(\beta)$$ is prior, it means it's asking the question, before observing the data, what is the probability of this setting of $$\beta$$ unconditional on anything.
