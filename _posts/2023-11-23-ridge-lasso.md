@@ -63,11 +63,14 @@ $$
 which means, that this setting of $$\beta$$ is most likely given the data we actually observe. $$\beta_{MAP}$$ maximizes the posterior. Now let's solve it.
 
 $$
-\begin{multline}
-\beta_{MAP} = argmax_\beta P(\beta|y) \\
-= argmax_\beta \frac{P(y|\beta)P(\beta)}{P(y)} \\
-= argmax_\beta P(y|\beta)P(\beta) \\
-\end{multline}
+\usepackage{amsmath}
+\begin{equation}
+  \begin{aligned}
+\beta_{MAP} & = argmax_\beta P(\beta|y) \\
+            & = argmax_\beta \frac{P(y|\beta)P(\beta)}{P(y)} \\
+            & = argmax_\beta P(y|\beta)P(\beta) \\
+  \end{aligned}
+\end{equation}
 $$
 
 Here $$P(y \mid \beta)$$ is the likelihood and $$P(\beta)$$ is the prior. $$P(\beta)$$ is prior, it means it's asking the question, before observing the data, what is the probability of this setting of $$\beta$$ unconditional on anything.
