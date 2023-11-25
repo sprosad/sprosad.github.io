@@ -110,7 +110,7 @@ $$
 
 The first part doesn't have $$\beta$$ term. So, we care about the second term only.
 
-So, each of the $$\beta_j$$ has the pdf like this.
+So, each of the $$\beta_j$$ has the pdf of normal distribution.
 
 There is a lot of mass around 0. This is where the regularization come in. We are trying to achieve the vakues of $$\beta$$ close to zero in regularization. So, the prior distribution is trying to do the same thing.
 
