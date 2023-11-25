@@ -112,7 +112,7 @@ The first part doesn't have $$\beta$$ term. So, we care about the second term on
 
 So, each of the $$\beta_j$$ has the pdf like this.
 
-![lr_likelihood_1](/assets/img/lr_likelihood_1.jpeg)
+![lr_likelihood_1](/assets/img/normal_1.jpeg)
 
 There is a lot of mass around 0. This is where the regularization come in. We are trying to achieve the vakues of $$\beta$$ close to zero in regularization. So, the prior distribution is trying to do the same thing.
 
@@ -128,6 +128,21 @@ argmax_\beta [log(P(y \mid \beta)) + log(P(\beta))] & = argmax_\beta [\sum[ - \f
  \end{aligned}
 \end{equation}
 $$
+
+Here $$\lambda = \frac{\sigma^2}{\tau^2}$$. The above equation is nothing but the Ridge Regularization. Isn't is fascinating.
+
+Similarly, if we pick Laplacian prior $$\beta_j \sim frac{1}{2b}e^{\frac{-|\beta_j|}{b}}$$, the we get the Lasso Regularization. (You can do the calculation of your own). 
+
+![lr_likelihood_1](/assets/img/laplace.jpeg)
+
+Now $$\lambda$$ controls the amount of regularization. More the value of $$\lambda$$ is, more the $$\beta$$s will be driven towards zero. How ?
+
+Let explain: $$\lambda = \frac{\sigma^2}{\tau^2}$$. If $$\lambda$$ is big, that means $$\tau$$ is small. Small value of $$\tau$$ makes prior distribution more narrow or peaked like the following.
+
+![lr_likelihood_1](/assets/img/normal_2.jpeg)
+
+That means we have more belief that $$\beta$$s are close to zero.
+
 
 
 
