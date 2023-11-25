@@ -28,7 +28,7 @@ $$
 y_i \sim N(\beta^T x_i, \sigma^2)
 $$
 
-One of the issues in $$ \beta $$ estimated from Ordinary Least Square(OLS) is that , $$\hat{\beta_ols} have high variance.
+One of the issues in $$ \beta $$ estimated from Ordinary Least Square(OLS) is that , $$\hat{\beta_ols}$$ have high variance.
 
 
 
