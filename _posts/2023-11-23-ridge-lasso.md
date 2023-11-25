@@ -54,7 +54,7 @@ $$
 {P(\beta|y)}
 $$
 
-First lets understand what it means. $$\beta$$ is an unknown parameter that we are trying to solve for. y is some known response variable. so $P(\beta|y)$ is asking the question about given the known parameter vector y, what is the probability of getting some settings of $$\beta$$. So the natural thing to do is maximize $$\beta$$.
+First lets understand what it means. $$\beta$$ is an unknown parameter that we are trying to solve for. y is some known response variable. so $$P(\beta \mid y)$$ is asking the question about given the known parameter vector y, what is the probability of getting some settings of $$\beta$$. So the natural thing to do is maximize $$\beta$$.
 
 $$
 \beta_{MAP} = argmax_\beta P(\beta|y)
