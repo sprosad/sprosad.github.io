@@ -50,7 +50,7 @@ But where the regularization terms come from ?
 
 We will look into posterior probability first and will try to maximize it. The posterior probability we will be looking at is $$ P(\beta|y) $$ \\
 
-First lets understand what it means. $$\beta$$ is an unknown parameter that we are trying to solve for. y is some known response variable. so $$P(\beta|y)$$ is asking the question about given the known parameter vector y, what is the probability of getting some settings of $$\beta$$. So the natural thing to do is maximize $$\beta's$$.
+First lets understand what it means. $$\beta$$ is an unknown parameter that we are trying to solve for. y is some known response variable. so $$P(\beta|y)$$ is asking the question about given the known parameter vector y, what is the probability of getting some settings of $$\beta$$. So the natural thing to do is maximize $$\beta$$.
 
 $$
 \beta_{MAP} = argmax_\beta P(\beta|y)
