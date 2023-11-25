@@ -67,13 +67,13 @@ $$
 $$
 
 $$
-            = argmax_\beta P(y|\beta)P(\beta)/P(y)  
+            		= argmax_\beta P(y|\beta)P(\beta)/P(y)  
 $$
 
 ... using Baye's theorem
 
 $$
-            = argmax_\beta P(y|\beta)P(\beta)       
+           			= argmax_\beta P(y|\beta)P(\beta)       
 $$
 
 ... the denominator doesnt have any \beta, so we can ignore that
