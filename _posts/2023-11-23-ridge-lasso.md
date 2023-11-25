@@ -66,9 +66,7 @@ $$
 \begin{multline}
 \beta_{MAP} = argmax_\beta P(\beta|y) \\
 = argmax_\beta \frac{P(y|\beta)P(\beta)}{P(y)} \\
-... using Baye's theorem \\
 = argmax_\beta P(y|\beta)P(\beta) \\
-... the denominator doesnt have any \beta, so we can ignore that\\
 \end{multline}
 $$
 
