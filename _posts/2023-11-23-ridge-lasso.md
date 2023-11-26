@@ -143,6 +143,31 @@ Let explain: $$\lambda = \frac{\sigma^2}{\tau^2}$$. If $$\lambda$$ is big, that 
 
 That means we have more belief that $$\beta$$s are close to zero.
 
+## Why Does Ridge Regression Improve Over Least Squares?
+
+Ridge regression’s advantage over least squares is rooted in thebias-variance trade-off. As $$\lambda$$ increases,the flexibility of the ridge regression fit decreases, leading to decreased variance but increased bias. In general, in situations where the relationship between the response and the predictors is close to linear, the least squares estimates will have low bias but may have high variance. This means that a small change in the training data can cause a large change in the least squares coefficient estimates. In particular,when the number of variables p is almost as large as the number of observations n, the least squares estimates will be extremely variable. And if p>n, then the least squares estimates do not even have a unique solution,whereas ridge regression can still perform well by trading off a small increase in bias for a large decrease in variance. Hence,ridge regression works best in situations where the least squares estimates have high variance.
+
+## Disadvantages of Ridge Regression
+
+Ridge regression does have one obvious disadvantage. Ridge regression will include all p predictors in the final model. The penalty $$\lambda\sum\beta_j^2$$ will shrink all of the coefficients towards zero,but it will not set any of them exactly to zero(unless $$\lambda = \infty).This may not be a problem for prediction accuracy, but it can create a challenge in model interpretation in settings in which the number of variables p is quite large. However, ridge regression will always generate a model involving all predictors. Increasing the value of $$\lambda$$ will tend to reduce the magnitudes of the coefficients, but will not result in exclusion of any of the variables. The lasso is a relatively recent alternative to ridge regression that overcomes this disadvantages.
+
+## Lasso Regression
+
+The lasso shrinks the coefficient estimates towards zero. However,in the case of the lasso,the l1 penalty has the effect of forcing some of the coefficient estimates to be exactly equal to zero when the tuning parameter $$\lambda$$ is sufficiently large. Hence,much like best subset selection,the lasso performs variable selection. As a result,models generated from the lasso are generally much easier to interpret than those produced by ridge regression. We say that the lasso yields sparse models—that is, sparse models that involve only a subset of the variables. As in ridge regression, selecting a good value of $$\lambda$$ for the lasso is critical.
+
+## Geometric Interpretetion of The Variable Selection Property of the Lasso
+
+We can write the Ridge and Lasso in the following form:
+
+![lr_likelihood_1](/assets/img/ridge_lasso.jpeg)
+
+Whenp=2, then (6.8) indicates that the lasso coefficient estimates have the smallest RSS out of all points that lie within the diamond define dby |β1|+|β2|≤s. Similarly, the ridge regression estimates have the smallest RSS out of all points that lie within the circle defined by $$\beta_1^2 + \beta_2^2 <s$$. We can think of(6.8) as follows. When we perform the lasso we are trying to find the set of coefficient estimates that lead to the smallest RSS,subject to the constraint that there is a budget s for how large $$\sum{j=1}{p}|\beta_j|$$ can be. When s is extremely large,then this budget is not very restrictive, and so the coefficient estimates can be large. In fact, if s is large enough that the least squares solution falls within the budget, then(6.8) will simply yield the least square ssolution. In contrast, if s is small,then $$\sum{j=1}{p}|\beta_j|$$ must be small in order to avoid violating the budget. Similarly,(6.9)indicates that when we performr idge regression,we seek a set of coefficient estimates such that the RSS is as small as possible, subject to the requirement that $$\sum{j=1}{p}\beta_j^2$$ not exceed the budgets.
+
+Why is it that the lasso, unlike ridge regression, results in coefficient estimates that are exactly equal to zero? The formulations(6.8)and(6.9) can be used to shed light on the issue. the following figure illustrates the situation. The least squares solution is marked as $$\cap{\beta}$$, while the blue diamond and
+
+![lr_likelihood_1](/assets/img/ridge_lasso_2.jpeg)
+
+circle represent the lasso and ridge regression constraints in(6.8)and(6.9), respectively. If s is sufficiently large, then the constraint regions will contain $$cap{\beta}$$, and so the ridge regression and lasso estimates will be the same as the least squares estimates. (Such a large value of s corresponds to $$\lambda=0$$ )However, in the above figure the least squares estimates lie outside of the diamond and the circle,and so the least squares estimates are not the same as the lasso and ridge regression estimates. The ellipses that are centered around $$\cap{\beta}$$ represent regions of constant RSS. In other words, all of the points on a given ellipse share a common value of the RSS. As the ellipse s expand away from the least squares coefficient estimates, the RSS increases. Equations (6.8)and(6.9) indicate that the lasso and ridge regression coefficient estimates are given bythe first point at which an ellipse contacts the constraint region. Since ridge regression has a circular constraint with no sharp points, this intersection will not generally occur on an axis,and so the ridge regression coefficient estimates will be exclusively non-zero. However, the lasso constraint has corners at each of the axes, and so the ellipse will often intersect the constraint region at an axis.When this occurs,one of the coefficients will equal zero. In higher dimensions,many of the coefficient estimates may equal zero simultaneously. In the above figure,the intersection occurs at $$\beta_1 = 0$$,and so the resulting model will only include $$\beta_2$$. In the above figure, we considered the simple case of p=2. Whenp=3, then the constraint region for ridge regression becomes a sphere,and the constraint region for the lasso becomes a polyhedron.
 
 
 
