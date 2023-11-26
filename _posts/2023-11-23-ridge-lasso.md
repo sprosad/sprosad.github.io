@@ -94,7 +94,7 @@ $$
 
 The first part doesn't have $$\beta$$ term. So, we care about the second term only.
 
-Now comes the second term of equation (i) which is the prior. Let's assume the prior distribution of $$\beta$$ is normal with mean 0 and variance \tau^2. So that means, $$\beta_j \sim N(0,\tau^2) \forall j = 1,2...,p$$
+Now comes the second term of equation (i) which is the prior. Let's assume the prior distribution of $$\beta$$ is normal with mean 0 and variance $$\tau^2$$. So that means, $$\beta_j \sim N(0,\tau^2) \forall j = 1,2...,p$$
 
 X is a nxp matrix, so there are p $$\beta$$
 
