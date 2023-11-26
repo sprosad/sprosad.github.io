@@ -94,7 +94,7 @@ $$
 
 The first part doesn't have $$\beta$$ term. So, we care about the second term only.
 
-Now comes the second term of equation (i) which is the prior. Let's assume the prior distribution of $$\beta$$ is normal with mean 0 and variance \tau^2. So that means, $$\beta_j \sim N(0,\tau^2) \forall j = 1,2...,p
+Now comes the second term of equation (i) which is the prior. Let's assume the prior distribution of $$\beta$$ is normal with mean 0 and variance \tau^2. So that means, $$\beta_j \sim N(0,\tau^2) \forall j = 1,2...,p$$
 
 X is a nxp matrix, so there are p $$\beta$$
 
@@ -114,7 +114,7 @@ So, each of the $$\beta_j$$ has the pdf of normal distribution.
 
 ![lr_likelihood_1](/assets/img/normal_1.jpeg)
 
-There is a lot of mass around 0. This is where the regularization come in. We are trying to achieve the vakues of $$\beta$$ close to zero in regularization. So, the prior distribution is trying to do the same thing.
+There is a lot of mass around 0. This is where the regularization come in. We are trying to achieve the values of $$\beta$$ close to zero in regularization. So, the prior distribution is trying to do the same thing.
 
 So, again going back to our main equation (i) and putting the values from (ii) and (iii), we get:
 
@@ -123,7 +123,7 @@ $$
  \begin{aligned}
 argmax_\beta [log(P(y \mid \beta)) + log(P(\beta))] & = argmax_\beta [\sum[ - \frac{1}{2\sigma^2}(y_i-\beta^Tx_i)^2 + \sum[ - \frac{\beta_j^2}{2\tau^2}]]\\
                  									& = - argmax_\beta [\sum[\frac{1}{2\sigma^2}(y_i-\beta^Tx_i)^2 + \sum[\frac{\beta_j^2}{2\tau^2}]]\\
-                 									& = - argmax_beta \frac{1}{2\sigma^2}[\sum(y_i-\beta^Tx_i)^2 + \frac{\sigma^2}{\tau^2}\sum\beta_j^2]\\
+                 									& = - argmax_\beta \frac{1}{2\sigma^2}[\sum(y_i-\beta^Tx_i)^2 + \frac{\sigma^2}{\tau^2}\sum\beta_j^2]\\
                  									& = argmin[||y-X\beta||^2 + \lambda \sum\beta_j^2]
  \end{aligned}
 \end{equation}
